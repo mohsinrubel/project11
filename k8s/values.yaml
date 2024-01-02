@@ -1,0 +1,9 @@
+replicaCount: 1
+image:
+  repository: yourusername/python-app
+  tag: latest
+  pullPolicy: IfNotPresent
+service:
+  name: python-app
+  type: LoadBalancer
+  port: 80
